@@ -1,0 +1,150 @@
+// 'HEADER' 'NAVIGATION'
+.header {
+    position: fixed;
+    width: 100%;
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+    background: $white;
+    z-index: 1;
+    
+    .container 
+    {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+.sitenav {
+
+      margin-right: auto;
+      padding-left: 5.8rem;
+    .sitenav-list
+    {
+        display: flex;
+        gap: 3.2rem;
+    }
+    .sitenav-link
+    {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 1.67;
+        color: $dim-grey;
+        transition: 0.3s;
+    }
+    .btn-mobile
+    {
+        display: none;
+    }
+    .sitenav-link:hover
+    {
+        color: $yellow;
+    }
+}
+    #menu
+    {
+        cursor: pointer;
+        color: $yellow;
+        font-size: 3.5rem;
+        display: none;
+    }
+    button
+    {
+        background: transparent;
+        border: none;
+        outline: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@include responsive (tablet)
+{
+    .header
+    {
+        .btn
+        {
+            display: none;
+        }
+        .sitenav
+        {
+            padding-left: 0;
+            margin-right: 0;
+        }
+    }
+}
+@include responsive (mobile)
+{
+    .header
+    {
+
+        .logo-link
+        {
+            margin: 0 auto;
+        }
+        .sitenav
+        {
+            position: absolute;
+            top: 8rem;
+            left: 0;
+            width: 70%;
+            height: 100vh;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s;
+            .sitenav-list
+            {
+            flex-direction: column;
+            padding: 6.4rem 2.5rem 46.1rem 3.9rem;
+            flex-flow: column;
+            gap: 2.4rem;
+            background-color:  #333A44;
+            }
+            .sitenav-link
+            {
+            color: #fff;
+            }
+            .btn-mobile
+            {
+                position: relative;
+                display: block;
+                top: 23.9rem;
+            }
+             
+        }
+            .show-nav {
+                opacity: 1;
+                visibility: visible;
+            }
+            #menu
+            {
+                display: block;
+                position: relative;
+            }
+            .logo__Link-image
+            {
+                position: relative;
+                top: -2px;
+                height: 20px;
+                width: 75.5px;
+            }
+    }
+}
+@include responsive (mobile_small)
+{
+    .sitenav
+    {
+        .btn-mobile
+        {
+            padding: 1.2rem 1.5rem;
+        }
+    }
+}

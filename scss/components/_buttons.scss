@@ -1,0 +1,37 @@
+.btn
+{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.67;
+    color: #fff;
+    padding: 1.4rem 3.9rem;
+    background: $yellow;
+    transition: 0.3s;
+    border: 3px solid transparent;
+}
+.btn:hover
+{
+   border: 3px solid $yellow;
+   color: $yellow;
+   background: transparent;
+}
+.btn-mobile
+{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.67;
+    color: #fff;
+    padding: 1.2rem 2.5rem;
+    background: $yellow;
+    transition: 0.3s;
+    border: 3px solid transparent;
+    text-align: center;
+}
+.btn-mobile:hover
+{
+    border: 3px solid $yellow;
+    color: $yellow;
+    background: transparent;
+}

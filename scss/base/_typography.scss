@@ -1,0 +1,21 @@
+body
+{
+    font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
+    @include title (1.5rem, 1.67, normal, $dim-grey, 400);
+}
+h1
+{
+    @include title (5.6rem, 1, -2.5px, $white, 700);
+}
+h2
+{
+    @include title (4.8rem, 1, -2.14286px, $dark-navy, 700);
+}
+h3
+{
+    @include title (4rem, 1.2, -1.78571px, $dark-navy, 700);
+}
+h4  
+{
+    @include title (2.4rem, 1.17, -1.07143px, $dark-navy, 700)
+}

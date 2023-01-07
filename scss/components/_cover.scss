@@ -1,0 +1,22 @@
+// COVER
+@include responsive (mobile)
+{
+
+.overlay
+{
+    width: 100%;
+    background: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.75;
+    display: none;
+
+}
+.overlay.show-nav 
+{
+    display: block;
+}
+}
