@@ -21,7 +21,10 @@
     .sitenav-list
     {
         display: flex;
-        gap: 3.2rem;
+    }
+    .sitenav-item:not(:last-child)
+    {
+        margin-right: 3.2rem;
     }
     .sitenav-link
     {
@@ -38,6 +41,10 @@
     .sitenav-link:hover
     {
         color: $yellow;
+    }
+    .btn-mobile
+    {
+        display: none;
     }
 }
     #menu
@@ -70,14 +77,27 @@
 {
     .header
     {
+        .container
+        {
+            justify-content: space-between;
+            button
+            {
+                display: none;
+            }
+        }
         .btn
         {
             display: none;
         }
-        .sitenav
+        .logo-link
         {
-            padding-left: 0;
-            margin-right: 0;
+            margin: 0;
+            padding: 0;
+        }
+        .sitenav
+        {   
+           padding: 0;
+           margin: 0;
         }
     }
 }
@@ -85,7 +105,13 @@
 {
     .header
     {
-
+        .container
+        {
+            button
+            {
+                display: block;
+            }
+        }
         .logo-link
         {
             margin: 0 auto;
@@ -94,12 +120,14 @@
         {
             position: absolute;
             top: 8rem;
-            left: 0;
             width: 70%;
+            left: 0;
             height: 100vh;
             visibility: hidden;
             opacity: 0;
             transition: 0.3s;
+            padding: 0;
+
             .sitenav-list
             {
             flex-direction: column;
@@ -114,28 +142,28 @@
             }
             .btn-mobile
             {
-                position: relative;
-                display: block;
-                top: 23.9rem;
+            display: block;
             }
              
         }
             .show-nav {
-                opacity: 1;
-                visibility: visible;
+            opacity: 1;
+            visibility: visible;
             }
             #menu
             {
-                display: block;
-                position: relative;
+            display: block;
+            }
+            #menu.bx-x {
+            transform: rotate(180deg);
+            transition: 0.3s linear;
             }
             .logo__Link-image
             {
-                position: relative;
-                top: -2px;
-                height: 20px;
-                width: 75.5px;
+            height: 20px;
+            width: 75.5px;
             }
+            
     }
 }
 @include responsive (mobile_small)

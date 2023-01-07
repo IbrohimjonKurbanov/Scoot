@@ -442,7 +442,9 @@ h4 {
 }
 .header .sitenav .sitenav-list {
   display: flex;
-  gap: 3.2rem;
+}
+.header .sitenav .sitenav-item:not(:last-child) {
+  margin-right: 3.2rem;
 }
 .header .sitenav .sitenav-link {
   font-weight: 700;
@@ -457,6 +459,9 @@ h4 {
 .header .sitenav .sitenav-link:hover {
   color: #FCB72B;
 }
+.header .sitenav .btn-mobile {
+  display: none;
+}
 .header #menu {
   cursor: pointer;
   color: #FCB72B;
@@ -470,27 +475,41 @@ h4 {
 }
 
 @media screen and (max-width: 750px) {
+  .header .container {
+    justify-content: space-between;
+  }
+  .header .container button {
+    display: none;
+  }
   .header .btn {
     display: none;
   }
+  .header .logo-link {
+    margin: 0;
+    padding: 0;
+  }
   .header .sitenav {
-    padding-left: 0;
-    margin-right: 0;
+    padding: 0;
+    margin: 0;
   }
 }
 @media screen and (max-width: 475px) {
+  .header .container button {
+    display: block;
+  }
   .header .logo-link {
     margin: 0 auto;
   }
   .header .sitenav {
     position: absolute;
     top: 8rem;
-    left: 0;
     width: 70%;
+    left: 0;
     height: 100vh;
     visibility: hidden;
     opacity: 0;
     transition: 0.3s;
+    padding: 0;
   }
   .header .sitenav .sitenav-list {
     flex-direction: column;
@@ -503,9 +522,7 @@ h4 {
     color: #fff;
   }
   .header .sitenav .btn-mobile {
-    position: relative;
     display: block;
-    top: 23.9rem;
   }
   .header .show-nav {
     opacity: 1;
@@ -513,11 +530,12 @@ h4 {
   }
   .header #menu {
     display: block;
-    position: relative;
+  }
+  .header #menu.bx-x {
+    transform: rotate(180deg);
+    transition: 0.3s linear;
   }
   .header .logo__Link-image {
-    position: relative;
-    top: -2px;
     height: 20px;
     width: 75.5px;
   }
