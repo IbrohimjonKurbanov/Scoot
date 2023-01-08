@@ -51,6 +51,11 @@
         @media screen and (max-width: 461px) {
              @content;
         }
+    }   
+    @else if $size == mobile_3 {
+        @media screen and (max-width: 375px) {
+             @content;
+        }
     }
     @else if $size == mobile_small {
         @media screen and (max-width: 341px) {

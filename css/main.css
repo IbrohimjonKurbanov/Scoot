@@ -385,7 +385,7 @@ h6 {
 
 .container {
   width: 100%;
-  max-width: 1183px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 30px;
@@ -434,6 +434,7 @@ h4 {
 }
 
 .header {
+  position: fixed;
   width: 100%;
   padding-top: 2.2rem;
   padding-bottom: 2.2rem;
@@ -617,6 +618,7 @@ h4 {
 }
 
 .hero {
+  margin-top: 11rem;
   background-image: url(../images/hero-strelka.png), url(../images/hero-img.jpg);
   background-repeat: no-repeat;
   background-size: 135rem, cover;
@@ -669,6 +671,85 @@ h4 {
 .features-title {
   font-family: "Space Mono", Arial, Helvetica, sans-serif;
   margin-bottom: 2.7rem;
+}
+
+.lives {
+  background-image: url("../images/lives-strelka.svg"), url("../images/lives-oval.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 15rem right, top 7.5rem right -340px;
+  padding-bottom: 15.5rem;
+  padding-top: 8rem;
+}
+.lives .lives-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lives .lives-wrapper .lives-image {
+  max-width: 100%;
+  border-radius: 50%;
+  z-index: -1;
+}
+.lives .lives-wrapper .lives__info {
+  max-width: 445px;
+}
+.lives .lives-wrapper .lives__title {
+  margin-bottom: 2.4rem;
+}
+.lives .lives-wrapper .lives__description {
+  margin-bottom: 4rem;
+}
+
+.lives-2 {
+  background-image: url("../images/lives-2-strelka.svg"), url("../images/lives-oval.svg");
+  background-repeat: no-repeat;
+  background-position: top 8rem left -35rem, top 7.5rem left -340px;
+  padding-bottom: 15.5rem;
+  padding-top: 8rem;
+}
+.lives-2 .lives-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lives-2 .lives-wrapper .lives-image {
+  border-radius: 50%;
+  z-index: -1;
+}
+.lives-2 .lives-wrapper .lives__info {
+  max-width: 445px;
+}
+.lives-2 .lives-wrapper .lives__title {
+  margin-bottom: 2.4rem;
+}
+.lives-2 .lives-wrapper .lives__description {
+  margin-bottom: 4rem;
+}
+
+.lives-3 {
+  background-image: url("../images/lives-3-strelka.svg"), url("../images/lives-oval.svg");
+  background-repeat: no-repeat;
+  background-position: top 15rem right -35rem, top 7.5rem right -340px;
+  padding-bottom: 15.5rem;
+  padding-top: 8rem;
+}
+.lives-3 .lives-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lives-3 .lives-wrapper .lives-image {
+  border-radius: 50%;
+  z-index: -1;
+}
+.lives-3 .lives-wrapper .lives__info {
+  max-width: 445px;
+}
+.lives-3 .lives-wrapper .lives__title {
+  margin-bottom: 2.4rem;
+}
+.lives-3 .lives-wrapper .lives__description {
+  margin-bottom: 4rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -743,6 +824,11 @@ h4 {
     gap: 7.9rem;
   }
 }
+@media screen and (max-width: 750px) {
+  .main {
+    margin-top: -10rem;
+  }
+}
 @media screen and (max-width: 615px) {
   .features {
     background-image: url();
@@ -759,5 +845,135 @@ h4 {
   .features .container {
     padding-left: 3.2rem;
     padding-right: 3.2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .lives {
+    background-image: url("../images/lives-strelka.svg"), url("../images/lives-oval.svg");
+    background-repeat: no-repeat;
+    background-position: bottom 50rem right, top 7.5rem right -340px;
+    padding-bottom: 12rem;
+  }
+  .lives .lives-wrapper {
+    flex-direction: column-reverse;
+  }
+  .lives .lives-wrapper .lives__info {
+    text-align: center;
+  }
+  .lives .lives-image {
+    margin-bottom: 5.6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .lives-2 {
+    background-image: url("../images/lives-2-strelka.svg"), url("../images/lives-oval.svg");
+    background-repeat: no-repeat;
+    background-position: top 8rem left -35rem, top 7.5rem left -340px;
+    padding-bottom: 12rem;
+    padding-top: 8rem;
+  }
+  .lives-2 .lives-wrapper {
+    flex-direction: column;
+  }
+  .lives-2 .lives-image {
+    margin-bottom: 5.6rem;
+  }
+  .lives-2 .lives__info {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .lives-3 {
+    background-image: url("../images/lives-strelka.svg"), url("../images/lives-oval.svg");
+    background-repeat: no-repeat;
+    background-position: top 15rem right -38rem, top 7.5rem right -340px;
+    padding-bottom: 15.5rem;
+    padding-top: 8rem;
+  }
+  .lives-3 .lives-wrapper {
+    flex-direction: column-reverse;
+  }
+  .lives-3 .lives-image {
+    margin-bottom: 5.6rem;
+  }
+  .lives-3 .lives__info {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 750px) {
+  .lives {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: bottom 53rem right -30rem;
+  }
+  .lives .container .lives-image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 311px;
+    height: 311px;
+  }
+  .lives .container .lives__title {
+    font-size: 3.2rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .lives-2 {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: bottom 53rem right -30rem;
+  }
+  .lives-2 .container .lives-image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 311px;
+    height: 311px;
+  }
+  .lives-2 .container .lives__title {
+    font-size: 3.2rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .lives-3 {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: bottom 53rem right -30rem;
+  }
+  .lives-3 .container .lives-image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 311px;
+    height: 311px;
+  }
+  .lives-3 .container .lives__title {
+    font-size: 3.2rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .lives {
+    background-image: url("../images/lives-strelka.svg");
+    background-repeat: no-repeat;
+    background-position: bottom 54.5rem right -42rem;
+  }
+  .lives .lives-image {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .lives-2 {
+    background-image: url("../images/lives-2-strelka.svg");
+    background-repeat: no-repeat;
+    background-position: top 8rem left -45rem;
+  }
+  .lives-2 .lives-image {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .lives-3 {
+    background-image: url("../images/lives-strelka.svg");
+    background-repeat: no-repeat;
+    background-position: top 7rem right -50rem;
+  }
+  .lives-3 .lives-image {
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }/*# sourceMappingURL=main.css.map */

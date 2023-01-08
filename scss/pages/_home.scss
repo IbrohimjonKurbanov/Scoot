@@ -5,6 +5,7 @@
 }
 // HERO
 .hero {
+    margin-top: 11rem;
     background-image: url(../images/hero-strelka.png), url(../images/hero-img.jpg);
     background-repeat: no-repeat;
     background-size: 135rem, cover;
@@ -35,7 +36,7 @@
     color: $white;
 }
 
-
+// FEATURES
 
 .features {
     padding-top: 16rem;
@@ -45,24 +46,149 @@
     background-size: 65%;
     background-position: left top 20rem;
 }
-.container {
-}
 .features__list {
     display: flex;
     gap: 3rem;
 }
-.features__item {
-}
 .features-image {
     margin-bottom: 4rem;
 }
-
 .features-title {
     font-family: 'Space Mono', Arial, Helvetica, sans-serif;
     margin-bottom: 2.7rem;
 }
-.features-description {
+
+// LIVES
+.lives {
+    background-image: url('../images/lives-strelka.svg'), url('../images/lives-oval.svg');
+    background-repeat: no-repeat;
+    background-position: bottom 15rem right, top 7.5rem right -340px;
+    padding-bottom: 15.5rem;
+    padding-top: 8rem;
+    .lives-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+     .lives-image{
+        max-width: 100%;
+        border-radius: 50%;
+        z-index: -1;
+    }
+    .lives__info {
+        max-width: 445px;
+    }
+    .lives__title {
+        margin-bottom: 2.4rem;
+    }
+    .lives__description {
+        margin-bottom: 4rem;
+    }
+    
+    }
 }
+// LIVES
+.lives-2 {
+    background-image: url('../images/lives-2-strelka.svg'), url('../images/lives-oval.svg');
+    background-repeat: no-repeat;
+    background-position: top 8rem left -35rem, top 7.5rem left -340px;
+    padding-bottom: 15.5rem;
+    padding-top: 8rem;
+    .lives-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+     .lives-image{
+        border-radius: 50%;
+        z-index: -1;
+    }
+    .lives__info {
+        max-width: 445px;
+    }
+    .lives__title {
+        margin-bottom: 2.4rem;
+    }
+    .lives__description {
+        margin-bottom: 4rem;
+    }
+    
+    }
+}
+// LIVES
+.lives-3 {
+    background-image: url('../images/lives-3-strelka.svg'), url('../images/lives-oval.svg');
+    background-repeat: no-repeat;
+    background-position: top 15rem right -35rem, top 7.5rem right -340px;
+    padding-bottom: 15.5rem;
+    padding-top: 8rem;
+    .lives-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+     .lives-image{
+        border-radius: 50%;
+        z-index: -1;
+    }
+    .lives__info {
+        max-width: 445px;
+    }
+    .lives__title {
+        margin-bottom: 2.4rem;
+    }
+    .lives__description {
+        margin-bottom: 4rem;
+    }
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -179,6 +305,16 @@
        
     }
 }
+
+
+@include responsive (tablet)
+{
+    .main
+    {
+        margin-top: -10rem;
+    }
+}
+
 @include responsive (tablet_4)
 {
     .features
@@ -207,5 +343,189 @@
                 padding-left: 3.2rem;
                 padding-right: 3.2rem;
             }
+    }
+}
+
+
+
+@include responsive (tablet_main)
+{
+    .lives
+    {
+        background-image: url('../images/lives-strelka.svg'), url('../images/lives-oval.svg');
+        background-repeat: no-repeat;
+        background-position: bottom 50rem right, top 7.5rem right -340px;
+        padding-bottom: 12rem;
+
+        .lives-wrapper
+        {
+            flex-direction: column-reverse;
+
+
+            .lives__info
+            {
+                text-align: center;
+            }
+        }
+        .lives-image
+        {
+            margin-bottom: 5.6rem;
+        }
+    }
+}
+@include responsive (tablet_main)
+{
+      .lives-2
+      {
+        background-image: url('../images/lives-2-strelka.svg'), url('../images/lives-oval.svg');
+        background-repeat: no-repeat;
+        background-position: top 8rem left -35rem, top 7.5rem left -340px;
+        padding-bottom: 12rem;
+        padding-top: 8rem;
+
+
+
+
+        .lives-wrapper
+        {
+            flex-direction: column;
+        }
+        .lives-image
+        {
+            margin-bottom: 5.6rem;
+        }
+        .lives__info
+        {
+            text-align: center;
+        }
+      }
+}
+@include responsive (tablet_main)
+{
+    .lives-3
+    {
+        background-image: url('../images/lives-strelka.svg'), url('../images/lives-oval.svg');
+        background-repeat: no-repeat;
+        background-position: top 15rem right -38rem, top 7.5rem right -340px;
+        padding-bottom: 15.5rem;
+        padding-top: 8rem;
+        .lives-wrapper
+        {
+            flex-direction: column-reverse;
+        }
+        .lives-image
+        {
+            margin-bottom: 5.6rem;
+        }
+        .lives__info
+        {
+            text-align: center;
+        }
+    }
+}
+
+@include responsive (tablet)
+{
+    .lives
+    {
+        background-image: url();
+        background-repeat: no-repeat;
+        background-position: bottom 53rem right -30rem;
+        
+        .container
+        {
+            .lives-image
+            {
+                object-fit: cover;
+                width: 311px;
+                height: 311px;
+            }
+            .lives__title
+            {
+                font-size: 3.2rem;
+            }
+        }
+    }
+}
+@include responsive (tablet)
+{
+    .lives-2
+    {
+        background-image: url();
+        background-repeat: no-repeat;
+        background-position: bottom 53rem right -30rem;
+        
+        .container
+        {
+            .lives-image
+            {
+                object-fit: cover;
+                width: 311px;
+                height: 311px;
+            }
+            .lives__title
+            {
+                font-size: 3.2rem;
+            }
+        }
+    }
+}
+@include responsive (tablet)
+{
+    .lives-3
+    {
+        background-image: url();
+        background-repeat: no-repeat;
+        background-position: bottom 53rem right -30rem;
+        
+        .container
+        {
+            .lives-image
+            {
+                object-fit: cover;
+                width: 311px;
+                height: 311px;
+            }
+            .lives__title
+            {
+                font-size: 3.2rem;
+            }
+        }
+    }
+}
+@include responsive (mobile_3)
+{
+    .lives
+    {
+        background-image: url('../images/lives-strelka.svg'),;
+        background-repeat: no-repeat;
+        background-position: bottom 54.5rem right -42rem;
+
+        .lives-image
+        {
+            object-fit: cover;
+        }
+    }
+    .lives-2
+    {
+        background-image: url('../images/lives-2-strelka.svg');
+        background-repeat: no-repeat;
+        background-position: top 8rem left -45rem;
+    
+        .lives-image
+        {
+            object-fit: cover;
+        }
+    }
+    .lives-3
+    {
+        background-image: url('../images/lives-strelka.svg');
+        background-repeat: no-repeat;
+        background-position: top 7rem right -50rem;
+    
+        .lives-image
+        {
+            object-fit: cover;
+        }
     }
 }
