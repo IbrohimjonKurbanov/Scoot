@@ -37,14 +37,32 @@
 
 
 
+.features {
+    padding-top: 16rem;
+    padding-bottom: 20rem;
+    background-image: url('../images/features-bg.png');
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: left top 20rem;
+}
+.container {
+}
+.features__list {
+    display: flex;
+    gap: 3rem;
+}
+.features__item {
+}
+.features-image {
+    margin-bottom: 4rem;
+}
 
-
-
-
-
-
-
-
+.features-title {
+    font-family: 'Space Mono', Arial, Helvetica, sans-serif;
+    margin-bottom: 2.7rem;
+}
+.features-description {
+}
 
 
 
@@ -62,6 +80,7 @@
 
 @include responsive(tablet_main)
 {
+    // HERO
     .hero
     {        
         background-image: url('../images/hero-tablet-2.png'), url('../images/hero-tablet-img.jpg');
@@ -85,6 +104,7 @@
         {
             padding: 0;
         }
+        // FEATURES
         }
     }
 }
@@ -124,4 +144,68 @@
                 margin-bottom: 3.4rem;
             }
         }
+}
+
+
+@include responsive (tablet_main)
+{
+    .features
+    {
+        background-image: url('../images/features-tablet-img.png');
+        background-repeat: no-repeat;
+        background-position: left 13.3rem  top;
+        background-size: 1.7rem;
+        padding-top: 12.2rem;
+        padding-bottom: 9.2rem;
+        .container
+        {
+            padding-left: 9.7rem;
+            padding-right: 9.7rem;
+        }
+
+        .features__list
+        {
+           
+            text-align: left;
+            flex-wrap: wrap;
+            display: flex;
+            
+            .features__item
+            {
+                display: flex;
+                gap: 7.9rem;
+            }
+        }
+       
+    }
+}
+@include responsive (tablet_4)
+{
+    .features
+    {
+        background-image: url();
+           
+        .features__list
+        {
+            .features__item
+        {
+           align-items: center;
+           justify-content: center;
+           text-align: center;
+           flex-flow: column;
+           gap: 0;
+        }
+        }
+    }
+}
+@include responsive (mobile_2)
+{
+    .features
+    {
+            .container
+            {
+                padding-left: 3.2rem;
+                padding-right: 3.2rem;
+            }
+    }
 }

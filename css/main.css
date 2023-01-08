@@ -345,6 +345,16 @@ html {
   height: 100%;
 }
 
+::-moz-selection {
+  background: #FCB72B;
+  color: #fff;
+}
+
+::selection {
+  background: #FCB72B;
+  color: #fff;
+}
+
 ul, ol {
   list-style: none;
 }
@@ -638,6 +648,29 @@ h4 {
   color: #ffffff;
 }
 
+.features {
+  padding-top: 16rem;
+  padding-bottom: 20rem;
+  background-image: url("../images/features-bg.png");
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: left top 20rem;
+}
+
+.features__list {
+  display: flex;
+  gap: 3rem;
+}
+
+.features-image {
+  margin-bottom: 4rem;
+}
+
+.features-title {
+  font-family: "Space Mono", Arial, Helvetica, sans-serif;
+  margin-bottom: 2.7rem;
+}
+
 @media screen and (max-width: 768px) {
   .hero {
     background-image: url("../images/hero-tablet-2.png"), url("../images/hero-tablet-img.jpg");
@@ -685,5 +718,46 @@ h4 {
   }
   .hero .hero__description {
     margin-bottom: 3.4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .features {
+    background-image: url("../images/features-tablet-img.png");
+    background-repeat: no-repeat;
+    background-position: left 13.3rem top;
+    background-size: 1.7rem;
+    padding-top: 12.2rem;
+    padding-bottom: 9.2rem;
+  }
+  .features .container {
+    padding-left: 9.7rem;
+    padding-right: 9.7rem;
+  }
+  .features .features__list {
+    text-align: left;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .features .features__list .features__item {
+    display: flex;
+    gap: 7.9rem;
+  }
+}
+@media screen and (max-width: 615px) {
+  .features {
+    background-image: url();
+  }
+  .features .features__list .features__item {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-flow: column;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 461px) {
+  .features .container {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
   }
 }/*# sourceMappingURL=main.css.map */
