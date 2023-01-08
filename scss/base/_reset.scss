@@ -15,6 +15,11 @@ html
     font-size: 62.5%;
     height: 100%;
 }
+::selection
+{
+    background: $yellow;
+    color: #fff;
+}
 ul, ol
 {
     list-style: none;
