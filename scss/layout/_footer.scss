@@ -1,0 +1,108 @@
+// FOOTER
+.footer {
+    background: #333A44;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.footer-nav {
+    margin-right: auto;
+    padding-left: 5.8rem;   
+}
+.footer-list {
+    display: flex;
+    gap: 2.4rem;
+}
+.footer__link {
+    font-family: 'Space Mono', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+    transition: 0.4s;
+}
+.footer__link:hover
+{
+    color: $yellow;
+}
+.footer-socials {
+    display: flex;
+    gap: 2.4rem;
+    svg
+    {
+        cursor: pointer;
+       
+    }
+    svg path:hover
+    {
+        fill:  #E5ECF4;       
+        transition: 0.4s;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@include responsive (tablet_3)
+{
+    .footer
+    {
+        .container
+        {
+            justify-content: space-between;
+        }
+        .footer-nav
+        {
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+@include responsive (mobile)
+{
+    .footer
+    {
+        
+        .container
+        {
+            flex-direction: column;
+            text-align: center;
+            .footer-list
+            {
+                flex-flow: column;
+            }
+            .footer-nav
+            {
+                margin-top: 4rem;
+                margin-bottom: 8.7rem;
+            }
+            .logo__footer-image img
+            {
+                margin-bottom: 4.1rem;
+            }
+        }
+          .footer-socials
+            {
+               gap: 2.4rem;
+            }
+    }
+}

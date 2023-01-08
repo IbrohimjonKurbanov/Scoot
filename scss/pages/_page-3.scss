@@ -1,0 +1,259 @@
+// ABOUT 
+.about {
+    margin-top: 11rem;
+    background-image: url('../images/about-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+
+    .about-info
+    {
+        padding-top: 7.2rem;
+        padding-bottom: 7.2rem;
+    }
+}
+
+.aboutliv {
+    background-image: url('../images/aboutliv-strelka-1.png'), url('../images/lives-oval.svg');
+    background-repeat: no-repeat;
+    background-position: bottom 15rem right, top 12rem right -340px;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    .container {
+        .aboutliv-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .aboutliv__info {
+            max-width: 445px;
+        }
+        .aboutliv__title {
+            margin-bottom: 2.4rem;
+        }
+        .aboutliv-image {
+            border-radius: 50%;
+            z-index: -1;
+        }
+    }
+}
+.aboutliv-2 {
+    background-image: url('../images/lives-2-strelka.svg'), url('../images/lives-oval.svg');
+    background-repeat: no-repeat;
+    background-position: top 1.5rem left -35rem, top 1.5rem left -340px;
+    padding-bottom: 12rem;
+    .container {
+        .aboutliv-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .aboutliv__info {
+            max-width: 445px;
+        }
+        .aboutliv__title {
+            margin-bottom: 2.4rem;
+        }
+        .aboutliv-image {
+            border-radius: 50%;
+            z-index: -1;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@include responsive (tablet)
+{
+    .main
+    {
+        margin-top: -5rem;
+    }
+}
+
+@include responsive (tablet_main)
+{
+    .aboutliv
+    {
+        background-image: url('../images/aboutliv-strelka-1.png'), url('../images/lives-oval.svg');
+        background-repeat: no-repeat;
+        background-position: bottom 40rem right, top 10rem right -340px;
+        padding-bottom: 12rem;
+
+        .aboutliv-wrapper
+        {
+            flex-direction: column-reverse;
+
+
+            .aboutliv__info
+            {
+                text-align: center;
+            }
+        }
+        .aboutliv-image
+        {
+            margin-bottom: 5.6rem;
+        }
+    }
+    .aboutliv-2
+    {
+        background-image: url('../images/lives-2-strelka.svg'), url('../images/lives-oval.svg');
+        background-repeat: no-repeat;
+        background-position: top  right 400px, top  left -340px;
+        padding-bottom: 12rem;
+
+        .aboutliv-wrapper
+        {
+            flex-direction: column;
+
+
+            .aboutliv__info
+            {
+                text-align: center;
+            }
+        }
+        .aboutliv-image
+        {
+            margin-bottom: 5.6rem;
+        }
+    }
+}
+
+@include responsive (tablet)
+{
+    .aboutliv,
+    .aboutliv-2
+    {
+        background-image: url();
+    
+        .container
+        {
+            .aboutliv-image
+            {
+                object-fit: cover;
+                width: 311px;
+                height: 311px;
+            }
+            .aboutliv__title
+            {
+                font-size: 3.2rem;
+            }
+        }
+    }
+}
+@include responsive (mobile_3)
+{
+    .aboutliv
+    {
+        background-image: url('../images/aboutliv-strelka-1.png');
+        background-repeat: no-repeat;
+        background-position: bottom 40rem right -45rem;
+        padding-bottom: 12rem;
+
+        .aboutliv-wrapper
+        {
+            flex-direction: column-reverse;
+
+
+            .aboutliv__info
+            {
+                text-align: center;
+            }
+        }
+        .aboutliv-image
+        {
+            margin-bottom: 5.6rem;
+        }
+     }
+    .aboutliv-2
+    {
+            background-image: url('../images/lives-2-strelka.svg');
+            background-repeat: no-repeat;
+            background-position: top right 5rem;
+            padding-bottom: 12rem;
+
+        .aboutliv-wrapper
+        {
+            flex-direction: column;
+
+
+            .aboutliv__info
+            {
+            text-align: center;
+            }
+        }
+        .aboutliv-image
+        {
+            margin-bottom: 5.6rem;
+        }
+    }
+}
+@include responsive (mobile)
+{
+    .about
+    {
+        .about-title
+        {
+            text-align: center;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

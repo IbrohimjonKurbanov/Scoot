@@ -143,6 +143,67 @@
     
     }
 }
+.sign {
+    background: #495567;
+    padding-top: 10.2rem;
+    padding-bottom: 10.2rem;
+
+    .container
+    {
+    .sign-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    .sign-title
+    {
+    font-family: 'Space Mono', Arial, Helvetica, sans-serif;
+    color: #fff;
+    }
+    .sign-info
+    {
+        max-width: 415px;
+    }
+    .sign__images {
+        display: flex;
+        gap: 1.8rem;
+    }
+    .sign-img
+    {
+        object-fit: cover;
+        cursor: pointer;
+    }
+    .sign-img
+    {
+        border-radius: 4px;
+    }
+    .line::after
+    {
+        content: '';
+        display: inline-block;
+        height: 96px;
+        width: 96px;
+        background-color: $yellow;
+        border-radius: 50%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .line::before
+    {
+        content: '';
+        display: inline-block;
+        height: 96px;
+        width: 96px;
+    }
+    .tr
+    {
+        display: flex;
+        align-items: center;
+    }
+    }
+}
 
 
 
@@ -497,7 +558,7 @@
 {
     .lives
     {
-        background-image: url('../images/lives-strelka.svg'),;
+        background-image: url('../images/lives-strelka.svg');
         background-repeat: no-repeat;
         background-position: bottom 54.5rem right -42rem;
 
@@ -526,6 +587,47 @@
         .lives-image
         {
             object-fit: cover;
+        }
+    }
+}
+@include responsive (tablet_main)
+{
+    .sign
+    {
+        padding-top: 6.2rem;
+        padding-bottom: 6.2rem;
+        .sign-wrapper
+        {
+            text-align: center;
+            gap: 4rem;
+            flex-flow: column;
+            justify-content: center;
+        }
+    }
+}
+@include responsive (mobile)
+{
+    .sign
+    {
+        .sign-info
+        {
+            width: 311px;
+        }
+        .sign-title
+        {
+            font-family: 'Space Mono', sans-serif;
+            font-size: 3.2rem;
+            line-height: 1;
+        }
+        .sign-img-1
+        {
+            width: 113px;
+            height: 40px;
+        }
+        .sign-img-2
+        {
+            width: 130px;
+            height: 40px;
         }
     }
 }

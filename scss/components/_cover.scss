@@ -6,17 +6,14 @@
 {
     width: 100%;
     background: #000000;
-    right: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
     bottom: 0;
     opacity: 0.75;
-    opacity: 0;
-    visibility: hidden;
-    height: 100%;
     display: none;
 }
-.overlay.show-nav 
-{
-    visibility: visible;
-    opacity: 1;
-}
+.overlay.show-nav {
+    display: block;
+  }
 }
