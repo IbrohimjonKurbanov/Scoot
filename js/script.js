@@ -5,7 +5,6 @@ const overlay = document.querySelector('.overlay');
 
 headerToggleBtn.addEventListener('click', () => {
   sitenav.classList.toggle('show-nav');
-  overlay.classList.toggle('show-nav');
   menu.classList.toggle('bx-x');
 })
 

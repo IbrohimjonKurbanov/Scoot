@@ -1,0 +1,127 @@
+// MAIN
+.main
+{
+    flex-grow: 1;
+}
+// HERO
+.hero {
+    background-image: url(../images/hero-strelka.png), url(../images/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-size: 135rem, cover;
+    background-position: left top  35rem, center;
+    
+.container
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+}
+.hero__info {
+   width: 500px;               
+   padding-top: 15.4rem;
+   padding-bottom:  15.4rem;
+}
+.hero__title {
+    font-family: 'Space Mono', Arial, Helvetica, sans-serif;
+    margin-bottom: 4rem;
+}
+.hero__wrapper {
+   
+    padding-left: 9.1rem;
+}
+.hero__description {
+    margin-bottom: 4rem;
+    color: $white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@include responsive(tablet_main)
+{
+    .hero
+    {        
+        background-image: url('../images/hero-tablet-2.png'), url('../images/hero-tablet-img.jpg');
+        background-repeat: no-repeat;
+        background-size: 40rem, cover;
+        background-position: left -9rem bottom 1.5rem, center;
+        
+        .container
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 9.7rem;
+            padding-right: 9.7rem;
+        .hero__info
+        {
+            text-align: center;
+            width: 576px;
+        }
+        .hero__wrapper
+        {
+            padding: 0;
+        }
+        }
+    }
+}
+@include responsive (tablet_3)
+{
+  .hero
+  {
+    .container
+    {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }   
+    .hero__title
+    {
+        font-size: 4.7rem;
+    }
+  }
+} 
+@include responsive (mobile)
+{
+        .hero
+        {
+            padding-top: 2.9rem;
+            padding-bottom: 4.2rem;
+            background-image:  url('/images/her0-mobile-2.png'), url('../images/hero-mobile-img.jpg');
+            background-repeat: no-repeat;
+            background-size: 15rem, cover;
+            background-position: left bottom 2.5rem, center;
+            .hero__title
+            {
+                font-size: 4rem;
+                line-height: 40px;
+                margin-bottom: 2.4rem;
+            }
+            .hero__description
+            {
+                margin-bottom: 3.4rem;
+            }
+        }
+}

@@ -1,11 +1,10 @@
 // 'HEADER' 'NAVIGATION'
 .header {
-    position: fixed;
     width: 100%;
     padding-top: 2.2rem;
     padding-bottom: 2.2rem;
     background: $white;
-    z-index: 1;
+    z-index: 1000;
     
     .container 
     {
@@ -28,6 +27,7 @@
     }
     .sitenav-link
     {
+        
         font-weight: 700;
         font-size: 15px;
         line-height: 1.67;
@@ -105,6 +105,7 @@
 {
     .header
     {
+        position: fixed;
         .container
         {
             button
@@ -118,15 +119,14 @@
         }
         .sitenav
         {
-            position: absolute;
-            top: 8rem;
+            position: fixed;
+            top: 7.9rem;
             width: 70%;
             left: 0;
-            height: 100vh;
-            visibility: hidden;
-            opacity: 0;
             transition: 0.3s;
             padding: 0;
+            visibility: hidden;
+            opacity: 0;
 
             .sitenav-list
             {
