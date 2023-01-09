@@ -12,7 +12,7 @@
 @mixin responsive ($size) {
 
     @if $size == tablet_main {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1200px) {
              @content;
         }
 

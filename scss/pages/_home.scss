@@ -20,8 +20,8 @@
 }
 .hero__info {
    width: 500px;               
-   padding-top: 15.4rem;
-   padding-bottom:  15.4rem;
+   padding-top: 17rem;
+   padding-bottom:  17rem;
 }
 .hero__title {
     font-family: 'Space Mono', Arial, Helvetica, sans-serif;
@@ -144,6 +144,10 @@
     }
 }
 .sign {
+    background-color: #495567;
+    background-image: url(/images/footer-bg.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
     background: #495567;
     padding-top: 10.2rem;
     padding-bottom: 10.2rem;

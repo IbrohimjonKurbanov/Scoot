@@ -732,8 +732,8 @@ h4 {
 
 .hero__info {
   width: 500px;
-  padding-top: 15.4rem;
-  padding-bottom: 15.4rem;
+  padding-top: 17rem;
+  padding-bottom: 17rem;
 }
 
 .hero__title {
@@ -853,6 +853,10 @@ h4 {
 }
 
 .sign {
+  background-color: #495567;
+  background-image: url(/images/footer-bg.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
   background: #495567;
   padding-top: 10.2rem;
   padding-bottom: 10.2rem;
@@ -903,7 +907,7 @@ h4 {
   align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .hero {
     background-image: url("../images/hero-tablet-2.png"), url("../images/hero-tablet-img.jpg");
     background-repeat: no-repeat;
@@ -956,7 +960,7 @@ h4 {
     padding-bottom: 10.4rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .features {
     background-image: url("../images/features-tablet-img.png");
     background-repeat: no-repeat;
@@ -997,7 +1001,7 @@ h4 {
     padding-right: 3.2rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .lives {
     background-image: url("../images/lives-strelka.svg"), url("../images/lives-oval.svg");
     background-repeat: no-repeat;
@@ -1014,7 +1018,7 @@ h4 {
     margin-bottom: 5.6rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .lives-2 {
     background-image: url("../images/lives-2-strelka.svg"), url("../images/lives-oval.svg");
     background-repeat: no-repeat;
@@ -1032,7 +1036,7 @@ h4 {
     text-align: center;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .lives-3 {
     background-image: url("../images/lives-strelka.svg"), url("../images/lives-oval.svg");
     background-repeat: no-repeat;
@@ -1127,7 +1131,7 @@ h4 {
        object-fit: cover;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .sign {
     padding-top: 6.2rem;
     padding-bottom: 6.2rem;
@@ -1289,7 +1293,6 @@ h4 {
 }
 
 .careers {
-  margin-top: 11rem;
   background-image: url("../images/cureers-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1377,12 +1380,12 @@ h4 {
   max-width: 445px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .values .values-item {
     width: 457px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .aboutliv {
     background-image: url("../images/aboutliv-strelka-1.png"), url("../images/lives-oval.svg");
     background-repeat: no-repeat;
@@ -1469,7 +1472,7 @@ h4 {
     font-size: 4rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .values .container .values__list {
     flex-wrap: wrap;
   }
@@ -1477,7 +1480,7 @@ h4 {
     margin-bottom: 5.6rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .faq {
     margin-bottom: 12rem;
     padding-bottom: 0;
@@ -1516,7 +1519,7 @@ h4 {
     font-size: 4rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .careersliv {
     background-image: url("../images/careers-strelka.png"), url("../images/lives-oval.svg");
     background-repeat: no-repeat;
@@ -1601,7 +1604,7 @@ h4 {
     padding: 3.6rem 3.2rem 3.2rem 3.2rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .location .location-wrapper {
     flex-direction: column;
     text-align: center;
