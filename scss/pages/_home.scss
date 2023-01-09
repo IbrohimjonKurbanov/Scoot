@@ -314,12 +314,12 @@
 {
         .hero
         {
-            padding-top: 0rem;
-            padding-bottom: 2.9rem;
+            padding-top: 10rem;
+            padding-bottom: 10rem;
             background-image:  url('/images/her0-mobile-2.png'), url('../images/hero-mobile-img.jpg');
             background-repeat: no-repeat;
             background-size: 15rem, cover;
-            background-position: left bottom 2.5rem, center;
+            background-position: left bottom 3.5rem, center;
             .hero__title
             {
                 font-size: 4rem;
@@ -331,7 +331,7 @@
                 margin-bottom: 3.4rem;
             }
             .hero__info {         
-                padding-top: 8rem;
+                padding-top: 1rem;
                 padding-bottom:  10.4rem;
              }
         }
