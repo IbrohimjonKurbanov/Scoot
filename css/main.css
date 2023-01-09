@@ -496,10 +496,7 @@ h4 {
   .header .container button {
     display: none;
   }
-  .header .container nav {
-    margin: 0;
-  }
-  .header .btn {
+  .header .container .btn {
     display: none;
   }
 }
@@ -538,7 +535,7 @@ h4 {
   .header .sitenav .btn-mobile {
     display: block;
     position: relative;
-    top: 20rem;
+    top: 23.9rem;
   }
   .header .show-nav {
     opacity: 1;
