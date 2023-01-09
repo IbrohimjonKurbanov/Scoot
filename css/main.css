@@ -728,7 +728,7 @@ h4 {
 
 .main {
   flex-grow: 1;
-  padding-top: 8rem;
+  padding-top: 10rem;
 }
 
 .hero {
@@ -1171,6 +1171,11 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+@media screen and (max-width: 750px) {
+  .main {
+    padding-top: 1rem;
   }
 }
 .about {

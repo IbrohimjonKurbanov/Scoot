@@ -2,7 +2,7 @@
 .main
 {
     flex-grow: 1;
-    padding-top: 8rem;
+    padding-top: 10rem;
 }
 // HERO
 .hero {
@@ -638,5 +638,12 @@
             align-items: center;
         }
        }
+    }
+}
+@include responsive (tablet)
+{
+    .main
+    {
+        padding-top: 1rem;
     }
 }
