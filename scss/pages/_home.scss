@@ -2,10 +2,10 @@
 .main
 {
     flex-grow: 1;
+    padding-top: 8rem;
 }
 // HERO
 .hero {
-    margin-top: 11rem;
     background-image: url(../images/hero-strelka.png), url(../images/hero-img.jpg);
     background-repeat: no-repeat;
     background-size: 135rem, cover;
@@ -314,8 +314,8 @@
 {
         .hero
         {
-            padding-top: 2.9rem;
-            padding-bottom: 4.2rem;
+            padding-top: 0rem;
+            padding-bottom: 2.9rem;
             background-image:  url('/images/her0-mobile-2.png'), url('../images/hero-mobile-img.jpg');
             background-repeat: no-repeat;
             background-size: 15rem, cover;
@@ -370,10 +370,6 @@
 
 @include responsive (tablet)
 {
-    .main
-    {
-        margin-top: -10rem;
-    }
 }
 
 @include responsive (tablet_4)

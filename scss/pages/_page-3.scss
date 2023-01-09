@@ -1,6 +1,6 @@
 // ABOUT 
 .about {
-    margin-top: 11rem;
+    
     background-image: url('../images/about-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -297,13 +297,7 @@
 }
 
 
-@include responsive (tablet)
-{
-    .main
-    {
-        margin-top: -5rem;
-    }
-}
+
 
 @include responsive (tablet_main)
 {

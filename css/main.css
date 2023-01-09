@@ -715,10 +715,10 @@ h4 {
 
 .main {
   flex-grow: 1;
+  padding-top: 8rem;
 }
 
 .hero {
-  margin-top: 11rem;
   background-image: url(../images/hero-strelka.png), url(../images/hero-img.jpg);
   background-repeat: no-repeat;
   background-size: 135rem, cover;
@@ -936,8 +936,8 @@ h4 {
 }
 @media screen and (max-width: 475px) {
   .hero {
-    padding-top: 2.9rem;
-    padding-bottom: 4.2rem;
+    padding-top: 0rem;
+    padding-bottom: 2.9rem;
     background-image: url("/images/her0-mobile-2.png"), url("../images/hero-mobile-img.jpg");
     background-repeat: no-repeat;
     background-size: 15rem, cover;
@@ -973,11 +973,6 @@ h4 {
   .features .features__list .features__item {
     display: flex;
     gap: 7.9rem;
-  }
-}
-@media screen and (max-width: 750px) {
-  .main {
-    margin-top: -10rem;
   }
 }
 @media screen and (max-width: 615px) {
@@ -1158,7 +1153,6 @@ h4 {
   }
 }
 .about {
-  margin-top: 11rem;
   background-image: url("../images/about-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1382,11 +1376,6 @@ h4 {
 @media screen and (max-width: 768px) {
   .values .values-item {
     width: 457px;
-  }
-}
-@media screen and (max-width: 750px) {
-  .main {
-    margin-top: -5rem;
   }
 }
 @media screen and (max-width: 768px) {
