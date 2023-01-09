@@ -218,15 +218,31 @@
 
 .location {
     padding-top: 12rem;
-    padding-bottom: 12rem;
 
 
     .container {
     }
     .location__image img {
-        padding-bottom: 12rem;
         max-width: 100%;
+        padding-bottom: 12rem;
     }
+   
+}
+.location__city
+{
+   display: none;
+   margin-bottom: 6.7rem;
+
+   .container
+   {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+   }
+}
+.location-textt
+{
+    padding-bottom: 12rem;
     .location-wrapper
     {
         display: flex;
@@ -240,8 +256,10 @@
     .location-text {
         max-width: 445px;
     }
+   
+   }
 }
-}
+
 
 
 
@@ -629,7 +647,7 @@
 }
 @include responsive (tablet_main)
 {
-    .location
+    .location-textt
     {
         .location-wrapper
         {
@@ -668,4 +686,11 @@
         }
     }
   }
+}
+@include responsive (mobile)
+{
+    .location__city
+    {
+        display: block;
+    }
 }
