@@ -450,11 +450,6 @@
     .faq {
         margin-bottom: 12rem;
         padding-bottom: 0;
-
-        .container {
-        align-items: center;
-        gap: 4.8rem;
-      }
       }
      
        .faqs-wrapper {
@@ -469,7 +464,7 @@
 
       }
       .faq .accordion {
-        width: 100%;
+        max-width: 100%;
       }
       .faq .accordion-button {
         font-size: 1.8rem;

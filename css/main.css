@@ -496,16 +496,11 @@ h4 {
   .header .container button {
     display: none;
   }
+  .header .container nav {
+    margin: 0;
+  }
   .header .btn {
     display: none;
-  }
-  .header .logo-link {
-    margin: 0;
-    padding: 0;
-  }
-  .header .sitenav {
-    padding: 0;
-    margin: 0;
   }
 }
 @media screen and (max-width: 475px) {
@@ -542,6 +537,8 @@ h4 {
   }
   .header .sitenav .btn-mobile {
     display: block;
+    position: relative;
+    top: 20rem;
   }
   .header .show-nav {
     opacity: 1;
@@ -558,8 +555,6 @@ h4 {
   .header .logo__Link-image {
     height: 20px;
     width: 75.5px;
-    position: relative;
-    right: 15px;
   }
 }
 @media screen and (max-width: 341px) {
@@ -857,10 +852,10 @@ h4 {
 
 .sign {
   background-color: #495567;
-  background-image: url(/images/footer-bg.svg);
+  background-image: url(../images/footer-bg.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
-  background: #495567;
+  background-color: #495567;
   padding-top: 10.2rem;
   padding-bottom: 10.2rem;
 }
@@ -1488,10 +1483,6 @@ h4 {
     margin-bottom: 12rem;
     padding-bottom: 0;
   }
-  .faq .container {
-    align-items: center;
-    gap: 4.8rem;
-  }
   .faqs-wrapper {
     display: flex;
     flex-direction: column;
@@ -1503,7 +1494,7 @@ h4 {
     text-align: center;
   }
   .faq .accordion {
-    width: 100%;
+    max-width: 100%;
   }
   .faq .accordion-button {
     font-size: 1.8rem;
