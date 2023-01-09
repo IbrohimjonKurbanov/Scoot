@@ -953,7 +953,7 @@ h4 {
 }
 @media screen and (max-width: 475px) {
   .hero {
-    padding-top: 10rem;
+    padding-top: 8rem;
     padding-bottom: 10rem;
     background-image: url("/images/her0-mobile-2.png"), url("../images/hero-mobile-img.jpg");
     background-repeat: no-repeat;
