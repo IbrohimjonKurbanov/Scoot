@@ -37,3 +37,23 @@
     color: $yellow;
     background: transparent;
 }
+.development-btn
+{
+    font-family: 'Space Mono', Arial, Helvetica, sans-serif;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.67;
+    color: #fff;
+    padding: 1.4rem 6.7rem;
+    background: $yellow;
+    transition: 0.3s;
+    border: 3px solid transparent;
+    text-align: center;
+}
+.development-btn:hover
+{
+    border: 3px solid $yellow;
+    color: $yellow;
+    background: transparent;
+}

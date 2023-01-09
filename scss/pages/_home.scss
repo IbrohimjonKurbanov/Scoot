@@ -619,15 +619,20 @@
             font-size: 3.2rem;
             line-height: 1;
         }
-        .sign-img-1
+    }
+}
+@include responsive (mobile_3)
+{
+    .sign
+    {
+       .container
+       {
+        .sign__images 
         {
-            width: 113px;
-            height: 40px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
-        .sign-img-2
-        {
-            width: 130px;
-            height: 40px;
-        }
+       }
     }
 }

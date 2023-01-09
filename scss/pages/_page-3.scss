@@ -62,6 +62,187 @@
     }
 }
 
+.values {
+    text-align: center;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+
+
+.values__heading {
+    margin-bottom: 10.8rem;
+}
+.values__list {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.values-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.values-title {
+    margin-bottom: 2.7rem;
+}
+.values__image
+{
+    border-radius: 50%;
+}
+.values-img
+{
+    position: relative;
+    top: -3.2rem;
+}
+}
+
+.faq {
+    padding-bottom: 16rem;
+    .container {
+        gap: 6.4rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .faqs-heading h2 {
+        text-align: center;
+        margin-bottom: 6.4rem;
+    }
+    .faqs-wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+    .faqs-title {
+        width: 350px;
+    }
+   .accordion {
+        width: 73rem;
+        border: none;
+    }
+    .accordion-item {
+        
+        padding: 3.2rem 4rem;
+        background-color: #f2f5f9;
+        color: #495567;
+        border: none;
+        margin-bottom: 1.6rem;
+
+    }.accordion-button {
+        border: none;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07143px;
+        color: #495567;
+        background-color: #f2f5f9;
+    }
+    .accordion-button:focus {
+        border: none;
+        outline: none;
+        box-shadow: none;
+      }
+}
+// CAREERS
+.careers {
+    margin-top: 11rem;
+    background-image: url('../images/cureers-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+
+    .careers-infoo
+    {
+        padding-top: 7.2rem;
+        padding-bottom: 7.2rem;
+    }
+}
+
+
+.careersliv {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    background-image: url('/images/careers-strelka.png'), url('../images/lives-oval.svg');
+    background-repeat: no-repeat;
+    background-position: bottom 13rem right, top 12rem right -340px;
+
+    .careers-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .careers__info {
+        max-width: 445px;
+    }
+    .careers__title {
+        margin-bottom: 2.4rem;
+    }
+    .careers__description {
+        margin-bottom: 4rem;
+    }
+    .careers-image {
+        border-radius: 50%;
+        object-fit: cover;
+        z-index: -1;
+    }
+}
+
+.development {
+    padding-bottom: 16rem;
+
+    .container {
+        gap: 2.4rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.development-box {
+    background: #F2F5F9;
+    display: flex;
+    justify-content: space-between;
+    padding: 3.7rem 6.4rem 3.7rem 4rem;
+}
+
+.development__title {
+    margin-bottom: 0.8rem;
+}
+.development__city {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #495567;
+}
+
+
+.location {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+
+
+    .container {
+    }
+    .location__image img {
+        padding-bottom: 12rem;
+        max-width: 100%;
+    }
+    .location-wrapper
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    
+    .location-title {
+        max-width: 350px;
+    }
+    .location-text {
+        max-width: 445px;
+    }
+}
+}
 
 
 
@@ -104,10 +285,16 @@
 
 
 
-
-
-
-
+@include responsive (tablet_main)
+{
+    .values
+    {
+        .values-item
+        {
+            width: 457px;
+        }
+    }
+}
 
 
 @include responsive (tablet)
@@ -242,18 +429,255 @@
         .about-title
         {
             text-align: center;
+            font-size: 4rem;
         }
     }
 }
 
+@include responsive (tablet_main)
+{
+    .values
+    {
+        .container
+        {
+            .values__list
+            {
+                flex-wrap: wrap;
+            }
+            .values-text
+            {
+                margin-bottom: 5.6rem;
+            }
+        }
+    }
+}
+
+@include responsive (tablet_main)
+{
+    .faq {
+        margin-bottom: 12rem;
+        padding-bottom: 0;
+
+        .container {
+        align-items: center;
+        gap: 4.8rem;
+      }
+      }
+     
+       .faqs-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+      }
+       .faqs-title  {
+        margin-bottom: 3.2rem;
+        text-align: center;
+
+      }
+      .faq .accordion {
+        width: 100%;
+      }
+      .faq .accordion-button {
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 1.33;
+        font-family: "Space Mono", monospace;
+        letter-spacing: -0.8;
+        color: #495567;
+      }
+}
+
+@include responsive (mobile)
+{
+    .careers
+    {
+        text-align: center;
+        .container
+        {
+            .careers-infoo {
+                .careers-title {
+                    font-size: 4rem;
+                }
+            }
+        }
+        
+       }
+    }
 
 
+@include responsive (tablet_main)
+{
+ .careersliv 
+{
+    background-image: url('../images/careers-strelka.png'), url('../images/lives-oval.svg');
+    background-repeat: no-repeat;
+    background-position: bottom 50rem right, top 10rem right -340px;
+    padding-bottom: 12rem;
+
+    .careers-wrapper
+    {
+        flex-direction: column-reverse;
+
+        .careers__info
+        {
+            text-align: center;
+        }
+    }
+    .careers-image
+    {
+        margin-bottom: 5.6rem;
+    }
+}
+}
 
 
+@include responsive (tablet)
+{
+    .careersliv
+    {
+        background-image: url();
+    
+        .container
+        {
+            .careers-image
+            {
+                object-fit: cover;
+                width: 311px;
+                height: 311px;
+            }
+            .careers__title 
+            {
+                font-size: 3.2rem;
+            }
+        }
+    }
+}
 
+@include responsive (mobile_3)
+{
+ .careersliv 
+{
+    background-image: url('../images/careers-strelka.png');
+    background-repeat: no-repeat;
+    background-position: bottom 52rem right -45rem;
+    padding-bottom: 12rem;
 
+    .careers-wrapper
+    {
+        flex-direction: column-reverse;
 
+        .careers__info
+        {
+            text-align: center;
+        }
+    }
+    .careers-image
+    {
+        margin-bottom: 5.6rem;
+    }
+}
+}
 
+@include responsive (tablet_5)
+{
+    .development
+    {
+        .development-box
+        {
+            flex-direction: column;
+            display: block;
+            justify-content: center;
+            text-align: center;
+            padding: 3.7rem 6.4rem 3.7rem 6.4rem;
 
+            .development__title
+            {
+                margin-bottom: 0.8rem;
+            }
+            .development__city
+            {
+                margin-bottom: 1.6rem;
+            }
+        }
+        // .development-btn
+    }
+}
+@include responsive (mobile_dev)
+{
+    .development
+    {
+        .development-box
+        {
+            .development__title
+            {
+                font-family: 'Space Mono';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 24px;
+                text-align: center;
+                letter-spacing: -0.803571px;
+                color: #495567;
+                margin-bottom: 0.4rem;   
+            }
+            .development__city
+            {
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+@include responsive (mobile_4)
+{
+    .development
+    {
+        .development-box
+        {
+            padding: 3.6rem 3.2rem 3.2rem 3.2rem;
+        }
+    }
+}
+@include responsive (tablet_main)
+{
+    .location
+    {
+        .location-wrapper
+        {
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+        .location-title
+        {
+            margin-bottom: 4rem;
 
-
+        }
+        .location-text 
+        {
+            max-width: 573px;
+            margin-bottom: 4rem;
+        }
+    }
+}
+@include responsive (mobile_3)
+{
+  .location
+  {
+    padding-top: 7.2rem;
+    .container
+    {
+        .location__image img
+        {
+            padding: 0;
+            padding-bottom: 7.2rem;
+        }
+        .location-title h2
+        {
+            font-size: 32px;
+            line-height: 32px;
+        }
+    }
+  }
+}

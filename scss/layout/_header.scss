@@ -128,6 +128,8 @@
             padding: 0;
             visibility: hidden;
             opacity: 0;
+            align-items: flex-start;
+            transform: translate(-100%);
 
             .sitenav-list
             {
@@ -143,15 +145,14 @@
             }
             .btn-mobile
             {
-             display: block;
-             position: relative;
-             top: 22.9rem;
+            display: block;
             }
              
         }
             .show-nav {
             opacity: 1;
             visibility: visible;
+            transform: translate(0%);
             }
             #menu
             {

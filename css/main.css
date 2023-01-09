@@ -408,6 +408,7 @@ h1 {
   letter-spacing: -2.5px;
   color: #ffffff;
   font-weight: 700;
+  font-family: "Space Mono";
 }
 
 h2 {
@@ -416,6 +417,7 @@ h2 {
   letter-spacing: -2.14286px;
   color: #495567;
   font-weight: 700;
+  font-family: "Space Mono";
 }
 
 h3 {
@@ -424,6 +426,7 @@ h3 {
   letter-spacing: -1.78571px;
   color: #495567;
   font-weight: 700;
+  font-family: "Space Mono";
 }
 
 h4 {
@@ -432,6 +435,7 @@ h4 {
   letter-spacing: -1.07143px;
   color: #495567;
   font-weight: 700;
+  font-family: "Space Mono";
 }
 
 .header {
@@ -523,6 +527,8 @@ h4 {
     padding: 0;
     visibility: hidden;
     opacity: 0;
+    align-items: flex-start;
+    transform: translate(-100%);
   }
   .header .sitenav .sitenav-list {
     flex-direction: column;
@@ -536,12 +542,11 @@ h4 {
   }
   .header .sitenav .btn-mobile {
     display: block;
-    position: relative;
-    top: 22.9rem;
   }
   .header .show-nav {
     opacity: 1;
     visibility: visible;
+    transform: translate(0%);
   }
   .header #menu {
     display: block;
@@ -683,6 +688,26 @@ h4 {
 }
 
 .btn-mobile:hover {
+  border: 3px solid #FCB72B;
+  color: #FCB72B;
+  background: transparent;
+}
+
+.development-btn {
+  font-family: "Space Mono", Arial, Helvetica, sans-serif;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.67;
+  color: #fff;
+  padding: 1.4rem 6.7rem;
+  background: #FCB72B;
+  transition: 0.3s;
+  border: 3px solid transparent;
+  text-align: center;
+}
+
+.development-btn:hover {
   border: 3px solid #FCB72B;
   color: #FCB72B;
   background: transparent;
@@ -1124,13 +1149,12 @@ h4 {
     font-size: 3.2rem;
     line-height: 1;
   }
-  .sign .sign-img-1 {
-    width: 113px;
-    height: 40px;
-  }
-  .sign .sign-img-2 {
-    width: 130px;
-    height: 40px;
+}
+@media screen and (max-width: 375px) {
+  .sign .container .sign__images {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 .about {
@@ -1190,6 +1214,176 @@ h4 {
   z-index: -1;
 }
 
+.values {
+  text-align: center;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+.values .values__heading {
+  margin-bottom: 10.8rem;
+}
+.values .values__list {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+.values .values-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.values .values-title {
+  margin-bottom: 2.7rem;
+}
+.values .values__image {
+  border-radius: 50%;
+}
+.values .values-img {
+  position: relative;
+  top: -3.2rem;
+}
+
+.faq {
+  padding-bottom: 16rem;
+}
+.faq .container {
+  gap: 6.4rem;
+  display: flex;
+  flex-direction: column;
+}
+.faq .faqs-heading h2 {
+  text-align: center;
+  margin-bottom: 6.4rem;
+}
+.faq .faqs-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.faq .faqs-title {
+  width: 350px;
+}
+.faq .accordion {
+  width: 73rem;
+  border: none;
+}
+.faq .accordion-item {
+  padding: 3.2rem 4rem;
+  background-color: #f2f5f9;
+  color: #495567;
+  border: none;
+  margin-bottom: 1.6rem;
+}
+.faq .accordion-button {
+  border: none;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+  background-color: #f2f5f9;
+}
+.faq .accordion-button:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.careers {
+  margin-top: 11rem;
+  background-image: url("../images/cureers-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container .careers-infoo {
+  padding-top: 7.2rem;
+  padding-bottom: 7.2rem;
+}
+
+.careersliv {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  background-image: url("/images/careers-strelka.png"), url("../images/lives-oval.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 13rem right, top 12rem right -340px;
+}
+.careersliv .careers-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.careersliv .careers__info {
+  max-width: 445px;
+}
+.careersliv .careers__title {
+  margin-bottom: 2.4rem;
+}
+.careersliv .careers__description {
+  margin-bottom: 4rem;
+}
+.careersliv .careers-image {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+.development {
+  padding-bottom: 16rem;
+}
+.development .container {
+  gap: 2.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.development-box {
+  background: #F2F5F9;
+  display: flex;
+  justify-content: space-between;
+  padding: 3.7rem 6.4rem 3.7rem 4rem;
+}
+
+.development__title {
+  margin-bottom: 0.8rem;
+}
+
+.development__city {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #495567;
+}
+
+.location {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+.location .location__image img {
+  padding-bottom: 12rem;
+  max-width: 100%;
+}
+.location .location-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.location .location-wrapper .location-title {
+  max-width: 350px;
+}
+.location .location-wrapper .location-text {
+  max-width: 445px;
+}
+
+@media screen and (max-width: 768px) {
+  .values .values-item {
+    width: 457px;
+  }
+}
 @media screen and (max-width: 750px) {
   .main {
     margin-top: -5rem;
@@ -1279,5 +1473,165 @@ h4 {
 @media screen and (max-width: 475px) {
   .about .about-title {
     text-align: center;
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .values .container .values__list {
+    flex-wrap: wrap;
+  }
+  .values .container .values-text {
+    margin-bottom: 5.6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .faq {
+    margin-bottom: 12rem;
+    padding-bottom: 0;
+  }
+  .faq .container {
+    align-items: center;
+    gap: 4.8rem;
+  }
+  .faqs-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+  .faqs-title {
+    margin-bottom: 3.2rem;
+    text-align: center;
+  }
+  .faq .accordion {
+    width: 100%;
+  }
+  .faq .accordion-button {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.33;
+    font-family: "Space Mono", monospace;
+    letter-spacing: -0.8;
+    color: #495567;
+  }
+}
+@media screen and (max-width: 475px) {
+  .careers {
+    text-align: center;
+  }
+  .careers .container .careers-infoo .careers-title {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .careersliv {
+    background-image: url("../images/careers-strelka.png"), url("../images/lives-oval.svg");
+    background-repeat: no-repeat;
+    background-position: bottom 50rem right, top 10rem right -340px;
+    padding-bottom: 12rem;
+  }
+  .careersliv .careers-wrapper {
+    flex-direction: column-reverse;
+  }
+  .careersliv .careers-wrapper .careers__info {
+    text-align: center;
+  }
+  .careersliv .careers-image {
+    margin-bottom: 5.6rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .careersliv {
+    background-image: url();
+  }
+  .careersliv .container .careers-image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 311px;
+    height: 311px;
+  }
+  .careersliv .container .careers__title {
+    font-size: 3.2rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .careersliv {
+    background-image: url("../images/careers-strelka.png");
+    background-repeat: no-repeat;
+    background-position: bottom 52rem right -45rem;
+    padding-bottom: 12rem;
+  }
+  .careersliv .careers-wrapper {
+    flex-direction: column-reverse;
+  }
+  .careersliv .careers-wrapper .careers__info {
+    text-align: center;
+  }
+  .careersliv .careers-image {
+    margin-bottom: 5.6rem;
+  }
+}
+@media screen and (max-width: 655px) {
+  .development .development-box {
+    flex-direction: column;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding: 3.7rem 6.4rem 3.7rem 6.4rem;
+  }
+  .development .development-box .development__title {
+    margin-bottom: 0.8rem;
+  }
+  .development .development-box .development__city {
+    margin-bottom: 1.6rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .development .development-box .development__title {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.803571px;
+    color: #495567;
+    margin-bottom: 0.4rem;
+  }
+  .development .development-box .development__city {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 393px) {
+  .development .development-box {
+    padding: 3.6rem 3.2rem 3.2rem 3.2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .location .location-wrapper {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .location .location-title {
+    margin-bottom: 4rem;
+  }
+  .location .location-text {
+    max-width: 573px;
+    margin-bottom: 4rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .location {
+    padding-top: 7.2rem;
+  }
+  .location .container .location__image img {
+    padding: 0;
+    padding-bottom: 7.2rem;
+  }
+  .location .container .location-title h2 {
+    font-size: 32px;
+    line-height: 32px;
   }
 }/*# sourceMappingURL=main.css.map */
