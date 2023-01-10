@@ -645,7 +645,6 @@ h4 {
 @media screen and (max-width: 475px) {
   .overlay {
     width: 100%;
-    height: 100%;
     background: #000000;
     position: absolute;
     left: 0;
