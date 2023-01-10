@@ -1,11 +1,12 @@
 // 'HEADER' 'NAVIGATION'
 .header {
-    position: fixed;
+    position: sticky;
     width: 100%;
     padding-top: 2.2rem;
     padding-bottom: 2.2rem;
     background: $white;
     z-index: 1000;
+    top: 0;
     
     .container 
     {

@@ -11,7 +11,6 @@
 }
 html
 {
-    scroll-behavior: smooth;
     overflow-x: hidden;
     font-size: 62.5%;
     height: 100%;
@@ -62,3 +61,16 @@ h6
     padding-left: 30px;
     padding-right: 30px;
 }
+// ::-webkit-scrollbar
+// {
+//     width: 1rem;
+//     z-index: 999 !important;
+//     display: block;
+// }
+// ::-webkit-scrollbar-thumb
+// {
+//     background-color: $yellow;
+//     border-radius: 10px;
+//     z-index: 99 !important;
+
+// }
