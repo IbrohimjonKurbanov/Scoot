@@ -772,6 +772,45 @@ h4 {
   background-size: 65%;
   background-position: left top 20rem;
 }
+.features .features-oval-1::before {
+  content: url("../images/ser-1.svg");
+  font-family: "Space Mono", Arial, Helvetica, sans-serif;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-color: #FCB72B;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.features .features-oval-2::before {
+  content: url("../images/ser-2.svg");
+  font-family: "Space Mono", Arial, Helvetica, sans-serif;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-color: #FCB72B;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.features .features-oval-3::before {
+  content: url("../images/ser-3.svg");
+  font-family: "Space Mono", Arial, Helvetica, sans-serif;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-color: #FCB72B;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
 
 .features__list {
   display: flex;
