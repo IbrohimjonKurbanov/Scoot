@@ -1608,9 +1608,6 @@ h4 {
   }
 }
 @media screen and (max-width: 475px) {
-  .about {
-    padding-top: 6rem;
-  }
   .about .about-title {
     text-align: center;
     font-size: 4rem;
@@ -1653,7 +1650,6 @@ h4 {
 }
 @media screen and (max-width: 475px) {
   .careers {
-    padding-top: 6rem;
     text-align: center;
   }
   .careers .container .careers-infoo .careers-title {
