@@ -520,8 +520,9 @@ h4 {
     position: fixed;
     top: 7.9rem;
     width: 70%;
-    height: auto;
+    height: 100%;
     left: 0;
+    bottom: 0;
     transition: 0.3s;
     padding: 0;
     visibility: hidden;
