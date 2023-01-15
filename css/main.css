@@ -543,7 +543,7 @@ h4 {
   .header .sitenav .btn-mobile {
     display: block;
     position: absolute;
-    bottom: 10rem;
+    bottom: 12rem;
   }
   .header .show-nav {
     opacity: 1;
